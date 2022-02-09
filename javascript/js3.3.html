@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <!--  5. Create a JSON object and access it using dot notation. -->
+<p id="para"></p>
+
+<script>
+const mJSON = '{"name":"Aditi", "age":30, "company":"JalaTech"}';
+const obj = JSON.parse(mJSON);
+document.getElementById("para").innerHTML = obj.name+" "+obj.company;
+</script>
+
+</body>
+</html>

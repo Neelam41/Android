@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Java3</title>
+    </head>
+    <body>
+        <script>
+            var increment=0;
+            var counter=0;
+
+            function Neelam(){
+                 increment+=1;
+                const count={
+               
+                set:function(increment){
+                 counter+=increment;
+
+                },
+                get:function(){
+                    return this.counter;
+                }
+
+            };
+            document.getElementById("counter").innerHTML="Count:"+this.counter;
+            }
+            
+        </script>
+        <button onclick="Neelam()">count</button>
+        <p id="counter">Count:0</p>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!-- 1. Write a program which consist of single line and multiline comments. -->
+<!-- 2. Create an array consisting of fruits names and when we click on a button 
+    sort it in descending order. -->
+    <!-- 3.Write a program with FOR/IN loop. -->
+    <!-- 4.Create an object "person" with properties firstname and lastname. Display these properties using 2 different ways of accessing. -->
+    <!-- 5.Write a program with variable hoisting(initialization first then declaration). -->
+    <!-- Use strict mode in your program and understand why variable not declared causes error. -->
+<!DOCTYPE html>
+ <html>
+     <head>
+         <title>basic html</title>
+         <script>
+/*Multi line comment
+ Master the basics of digital marketing with 
+our Interactive Advertising Bureau-accredited course free of charge. 
+There are 26 modules to explore, all created by Google trainers, packed 
+full of practical exercises and real-world examples to help you turn knowledge */
+// Single line comment
+"use strict"
+function fruits(){
+    var fruit=['apple','banana','grapes','orange','pinnaple', 'kiwi'];
+
+    document.getElementById("fruits").style.color='red';
+    document.getElementById("fruits").innerHTML="In Decreasing Order: "+fruit.reverse();
+// using person object
+    const person = {
+    firstname: 'Monica',
+    lastname:'rawat'
+}
+
+// using for...in
+for ( let key in person ) {
+
+    // display properties
+    // using dot property
+
+   document.getElementById("person").innerHTML=person.firstname + " "+ person.lastname;
+// using object.values()
+   document.getElementById("person1").innerHTML= "hello "+ Object.values(person);
+
+}
+
+
+// Hoisting is JavaScript
+var x = 5; // Initialize x
+// "using strict"- variable not declared will cause error and output will not be produced
+y=7; // Declare y 
+
+ document.getElementById("person2").innerHTML = x + " " + y;
+
+  
+}
+
+         </script>
+     </head>
+     <body>
+<form>
+    <p>Fruits:-'apple','banana','grapes','orange','pinnaple', 'kiwi'</p>
+    <p id ="fruits"></p>
+    <input  type="button" onclick="fruits()" value=" Decresing order">
+  <p id="person"></p>
+  <p id="person1"></p>  
+
+  <p id="person2"></p>
+
+</form>
+
+     </body>
+ </html>

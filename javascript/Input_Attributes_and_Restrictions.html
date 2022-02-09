@@ -1,0 +1,91 @@
+<!-- 1. Design the web page using all the below input attributes type =text, password, submit, reset, radio, checkbox, button,
+2. HTML5 input Types
+type=number, range, color, date, file, time, month, week, email
+3. Apply all of the below input restrictions
+disabled, max, maxlength, min, readonly, required, size, value
+4. Develop a web page using target attribute.
+5. Use I-frames and Marquee in your webpage. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>basic html</title>
+    </head>
+    <body>
+        <form>
+            <input type="text" placeholder="text">
+            <input type="password" placeholder="Password">
+            <input type="submit" value="submit">
+         
+            <input type="reset" placeholder="reset">   <br>
+
+            <input type="radio"><label>Radio</label>
+            <input type="checkbox"><label>Check the Box</label>
+            <input type="button" onclick="alert('hello world!')" value="Click"><br>
+            <label for="favcolor">Select your favorite color:</label>
+  <input type="color" name="favcolor"><br>
+
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+  <br>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+  <br>
+  <label for="onefile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile">
+  <br>
+  <label for="bdaymonth">Birthday (month and year):</label>
+  <input type="month" id="bdaymonth" name="bdaymonth">
+  <br>
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+  <br>
+
+  <label for="vol">Volume (0-100):</label>
+  <input type="range" id="vol" name="vol" min="0" max="100">
+  <br>
+  <label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt">
+  <br>
+  <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week">
+        </form>
+        <br>
+        <br>
+        <hr>
+
+
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="Neelam"><br>
+            <label for="name">Last name:</label><br>
+            <input type="text" id="lname" name="fname" value="Bora" readonly><br>
+            <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="neelam" disabled><br>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+ 
+
+  <label for="datemax">Enter a date before 2021-07-03:</label>
+  <input type="date" id="datemax" name="datemax" max="2021-07-03"><br><br>
+
+  <label for="datemin">Enter a date after 2021-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2021-01-02"><br><br>
+
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+        </form>
+        <a href="#" target="_blank">Visit Lenskart</a>
+
+        <a href="#" target="_self">Visit us </a>
+        <a href="#" target="_parent">hello india</a>
+        <a href="#" target="_top">hello world</a>
+        <iframe src="https://www.lenskart.com" title="Eye-glasses"></iframe>
+        <marquee direction="up">Hii there i am using html</marquee>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+    </body>
+</html>

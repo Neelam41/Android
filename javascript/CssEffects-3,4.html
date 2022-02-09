@@ -1,0 +1,76 @@
+<!-- Add positions to CSS block (static, relative, fixed, absolute and sticky). 
+    4. Handling Overflow using scroll. -->
+<!-- 5. Adding Opacity to a image -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions In CSS</title>
+    <style>
+        div{
+            border: 5px solid rgb(91, 80, 138);
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        /* The default position of all the boxes in the above image is static. Now, we will change the position from static to relative of box1.  */
+        #box1{
+            /* relative: Positions the element relative to its normal positon and will leave a gap at its normal position*/ 
+            position:relative ;
+            top:20px;
+            left:5px;
+
+        }
+        /* It is a hybrid of relative and fixed position. */
+        #box2{
+
+        /* sticky: Positions the element relative to the users scroll position */
+            position: sticky;
+            right:3px;
+        }
+        #box3{
+            /* fixed: Positions the element relative to the browser window; */
+            position: fixed;
+            right: 4px;
+        }
+        #box4{
+            /* An element with the absolute position will move according to the position of its parent element. */
+            position: absolute;
+            top: 20px;
+            left: 34px; 
+        }
+        #box5{
+
+            position: static;
+            top:100px;
+            left:34px; 
+        }
+        .photo{
+            width: 200px;
+            height: 200px;
+            border: 10px solid rgb(17, 212, 49);
+            /* overflow:hidden; */
+            /* overflow:visible;*/
+            overflow:scroll;
+        }
+        img{ 
+ 
+            width:300px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">relative</div>
+    <div class="box" id="box2">sticky</div>
+    <div class="box" id="box3">fixed</div>
+    <div class="box" id="box4">absolute</div>
+    <div class="box" id="box5">static</div>
+    <div class="photo">
+        <img src="ggle.png">
+    </div>
+    
+</body>
+</html>

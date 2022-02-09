@@ -1,0 +1,70 @@
+ 
+<!-- 1. Add CSS comments in your CSS block.
+2. Create a page with different background-colour of a page and set an image as the background-image of a page (image should not scroll with the rest of the page and specify the size of a background image)
+3. Create a different page with the width, style and color of the 4 border-style(set different borders on each side with different patterns).
+4. Develop a page and set the height:(in pixels and %) and width:(in pixels and %) on elements.
+5. Develop a page with different font-styles, font-size, font-family, colors and text-align.  -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>basic html</title>
+        <style>
+            /* body section styling*/
+            body{
+                padding: 0px;
+                margin: 0px;
+                background-color: chartreuse;
+                background-image: url(ggle.png);
+                background-size: cover;
+  
+            }
+            /* div section styling */
+            .div1{
+
+                background-color:cadetblue;
+            text-align: center;
+                height: 80px;
+                margin: 20px;  
+                border: 5px;
+                border-top-color: brown;
+                border-bottom-color: chocolate;
+                border-left-color: chartreuse;
+                border-right-color: deeppink;
+                border-top-style: double;
+                border-bottom-style: groove;
+                border-left-style: dashed;
+                border-right-style:dotted;
+
+            }
+           .div2 p:nth-child(1){
+               text-align: right;
+    width: 100%;
+    height: 58px;
+    background-color:crimson;
+color:greenyellow;
+font-size:medium;
+font-style: oblique;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.div2 p:nth-child(2){
+    width: 100%;
+    height:5%;
+    background-color:navy;
+    color: chartreuse;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+ 
+
+        </style>
+    </head>
+    <body>
+        <div class=div1>Hii I am using CSS </div>
+
+        <div class="div2"><p>set the height:(in pixels and %) and width:(in pixels and %) on elements.</p>
+            <p>set the height:(in pixels and %) and width:(in pixels and %) on elements.</p>
+        </div>
+        
+    </body>
+</html>

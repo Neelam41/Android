@@ -1,0 +1,53 @@
+<!-- Apply CSS shadow effects like for image box and hover a cursor. -->
+<!-- Use CSS animations (name,duration,iteration-count & delay) 
+    and paginations(Hoverable,with and without spaces). -->
+   
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Css Effects</title>
+        <style>
+            body{
+  background: #fff;
+}
+.box{
+  font-size: 20px;
+  color: #fff;
+  transition: box-shadow .3s;
+  width: 300px;
+  height: 300px;
+  margin: 50px;
+  border-radius:10px;
+  background: rgb(197, 56, 56);
+  animation-name: animate;
+  animation-duration: 10s;
+  animation-delay:-2s;
+  animation-iteration-count: 4;
+  
+}
+
+@keyframes animate{
+    0%{left:0px; top: 0px;}
+    50%{background-color: darkblue; margin-left: 140vh; top: 10px; transform: rotate(180deg) scale(1) ;}
+    100%{
+        background-color:rgb(197, 56, 56) ; left:0px; top:0px;
+        }
+}
+.box:hover {
+  box-shadow: 20px 20px 11px rgba(238, 248, 97, 0.945); 
+}
+
+        </style>
+    </head>
+    <body>
+  
+        <div class="box">
+          
+        </div>
+        <div class="box">
+          
+        </div>
+
+    </body>
+    </html>
+

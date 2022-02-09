@@ -1,0 +1,98 @@
+<!-- 1. Develop a web page with non-semantic elements <div> and <span>
+    2. Develop a web page with the semantic elements <form>, <table> and <article>
+    3. Use all the HTML5 tags and develop a web page
+    article, aside, figcaption, figure,footer,header, hgroup,mark,nav, section,time -->
+    <!DOCTYPE html>
+<html>
+    <head>
+        <title>basic html</title>
+        <style>
+            div{
+                background-color: aqua;
+                width: 25vh;
+            }
+        </style>
+    </head>
+    <body>
+    <!-- DIV AND SPAN -->
+        <div class="div1"> I am 1st div</div>
+        <span class="Span1"> Hii I am span 1</span>
+
+        <!-- ARTICLE -->
+        <article class="browser">
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+          </article>
+          <!-- FORM -->
+          <form method="get">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+        <!-- TABLE  -->
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>age</th>
+            </tr>
+            <tr>
+              <td>Shivangi</td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <td>Radha</td>
+              <td>20</td>
+            </tr>
+          </table>
+ 
+         
+<!-- ASIDE:Display some content aside from the content it is placed in -->
+<aside>
+    <h4>Epcot Center</h4>
+    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+    </aside>
+
+    <!-- FIGCAPTION AND FIGURE-->
+    <figure>
+        <img src="ggle.png" alt="Google" style="width:100%">
+        <figcaption>Google image</figcaption>
+      </figure>
+      <!-- FOOTER: defines footer section of the page -->
+      <footer>
+        <p>Page end here</p>
+        <p>Have a nice day</p>
+      </footer>
+      <!-- header:element represents a container for introductory content  -->
+    
+        <header>
+            <h1>A heading here</h1>
+            <p>Posted by John Doe</p>
+            <p>Some additional information here</p>
+          </header>
+    <!-- HGROUP:used to group the heading elements. -->
+    <hgroup>
+        <h1>This is the title.</h1>
+        <h2>This is sub-title.</h2>
+    </hgroup>
+
+<!-- MARK -->
+<p1><mark>part that need to be highlighted</mark></p1>
+
+<!-- NAV -->
+<nav>
+    <a href="/html/">HTML</a> |
+    <a href="/css/">CSS</a> |
+    <a href="/js/">JavaScript</a> |
+    <a href="/python/">Python</a>
+  </nav>
+<!-- SECTION -->
+<section>
+    <h2>WWF's </h2>
+    <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+    </section>
+<!-- TIME -->
+<p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+    </body>
+</html>
